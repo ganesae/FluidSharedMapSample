@@ -1,0 +1,25 @@
+{
+    "extends": "@tsconfig/node14/tsconfig.json",
+    "compilerOptions": {
+        // "allowSyntheticDefaultImports": true,
+        // "target": "es6",
+        // "noImplicitAny": true,
+        // "preserveConstEnums": true,
+        "target": "es6",
+        "module": "commonjs",
+        "sourceMap": true,
+        "outDir": "dist/",
+        "jsx": "react",
+        "lib": [
+            "DOM",
+            "DOM.Iterable"
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
